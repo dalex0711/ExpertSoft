@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>upload</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-lg mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="text-xl font-semibold text-gray-700 mb-4">Upload File</h2>
+
+    <!-- Upload area -->
+    <label for="dropzone-file" id="dropzone"
+      class="flex flex-col items-center justify-center w-full h-56 border-2 border-dashed border-blue-400 rounded-lg cursor-pointer bg-blue-50 hover:bg-blue-100 transition">
+      <div class="flex flex-col items-center justify-center p-5">
+        <svg class="w-10 h-10 mb-3 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M7 16V4m0 0l-4 4m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4" />
+        </svg>
+        <p class="text-sm text-gray-500"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+        <p class="text-xs text-gray-400 mt-1">Upload your .xlsx file</p>
+      </div>
+      <input id="dropzone-file" type="file" class="hidden" accept=".xls,.xlsx" />
+    </label>
+
+    <!-- Selected file name -->
+    <p id="file-name" 
+       class="block w-full mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-default bg-gray-50 px-3 py-2 select-text"></p>
+
+    <!-- Cancel button -->
+    <button id="cancel-btn" class="w-full mt-2 py-2 px-4 rounded-lg bg-gray-300 text-gray-700 hover:bg-gray-400 transition hidden">
+      Cancel
+    </button>
+
+    <!-- Upload button -->
+    <button id="upload-btn"
+      class="w-full mt-5 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition disabled:opacity-50"
+      disabled>
+      Upload File
+    </button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

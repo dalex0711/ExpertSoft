@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "f7751611-3901-4760-b3ce-f6f57885da5c",
+		"name": "postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47574833",
+		"_collection_link": "https://dalex0711-9506756.postman.co/workspace/Dalexa-Sanjuan's-Workspace~1d4ad68e-7d5b-4871-8e37-883240e7b1e7/collection/47574833-f7751611-3901-4760-b3ce-f6f57885da5c?action=share&source=collection_link&creator=47574833"
+	},
+	"item": [
+		{
+			"name": "advanced_queries",
+			"item": [
+				{
+					"name": "paymentCustomer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name_customer\": \"dalexa sanjuan\",\n        \"identification_number\": \"10436633\",\n        \"address\": \"smbl 100\",\n        \"cellphone\": \"30215122\",\n        \"mail\": \"dal@example.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/paymentCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"paymentCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pendingInvoices",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name_customer\": \"dalexa sanjuan\",\n        \"identification_number\": \"10436633\",\n        \"address\": \"smbl 100\",\n        \"cellphone\": \"30215122\",\n        \"mail\": \"dal@example.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/pendingInvoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pendingInvoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactionsNequi",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name_customer\": \"dalexa sanjuan\",\n        \"identification_number\": \"10436633\",\n        \"address\": \"smbl 100\",\n        \"cellphone\": \"30215122\",\n        \"mail\": \"dal@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name_customer\": \"riwiando\",\n    \"identification_number\": \"10436633\",\n    \"address\": \"smbl 100\",\n    \"cellphone\": \"30215122\",\n    \"mail\": \"riwi@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name_customer\": \"riwiando\",\n    \"identification_number\": \"10436633\",\n    \"address\": \"smbl 100\",\n    \"cellphone\": \"30215122\",\n    \"mail\": \"riwi@example.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
